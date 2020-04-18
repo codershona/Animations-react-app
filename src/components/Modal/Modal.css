@@ -15,11 +15,20 @@
 .ModalOpen {
     display: block;
 
+    /*USING CSS TRANSITIONS*/
 
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .ModalClosed {
     display: none;
+
+     /*USING CSS TRANSITIONS*/
+
+    opacity: 0;
+    transform: translateY(-100%);
     
 
 }
+
