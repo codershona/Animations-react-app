@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import Transition from 'react-transition-group/Transition'; 
 
 import "./App.css";
 import Modal from "./components/Modal/Modal";
 import Backdrop from "./components/Backdrop/Backdrop";
 import List from "./components/List/List";
 // import { Transition } from 'react-transition-group';
-import Transition from 'react-transition-group/Transition'; 
+
 
 class App extends Component {
   state = {
@@ -63,7 +64,7 @@ class App extends Component {
   <Transition 
    mountOnEnter
    unmountOnExit
-   
+
   in={this.state.modalIsOpen} 
   timeout={300} >
         {state => (
