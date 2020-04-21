@@ -43,6 +43,7 @@ class List extends Component {
             <div>
                 <button className="Button" onClick={this.addItemHandler}>Add Item</button>
                 <p>Click Item to Remove.</p>
+                
                 <TransitionGroup 
                 component="ul"
                 className="List"
