@@ -22,7 +22,15 @@ const modal = props => {
 
   in={props.show} 
   timeout={animationTiming}
-  classNames="fade-slide" 
+  classNames={{
+    enter:
+    enterActive:
+    exit:
+    exitActive:
+    appear:
+    appearActive:
+    
+  }} 
   >
 
     <div className="Modal">
