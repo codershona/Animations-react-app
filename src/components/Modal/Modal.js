@@ -13,9 +13,8 @@ const animationTiming = {
 
 
 const modal = props => {
- 
-
-  return (
+   
+   return (
 
       <Transition 
    mountOnEnter
