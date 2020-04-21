@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './List.css';
+import TransitionGroup from 'react-transition-group/TransitionGroup';
 
 class List extends Component {
     state = {
@@ -34,9 +35,12 @@ class List extends Component {
             <div>
                 <button className="Button" onClick={this.addItemHandler}>Add Item</button>
                 <p>Click Item to Remove.</p>
-                <ul className="List">
+                <TransitionGroup 
+                component="ul"
+                className="List"
+                >
                     {listItems}
-                </ul>
+                </TransitionGroup>
             </div>
         );
     }
