@@ -23,13 +23,12 @@ const modal = props => {
   in={props.show} 
   timeout={animationTiming}
   classNames={{
-    enter:
-    enterActive:
-    exit:
-    exitActive:
-    appear:
-    appearActive:
+    enter: '',
+    enterActive: 'ModalOpen',
+    exit: '',
+    exitActive: 'ModalClosed'
     
+
   }} 
   >
 
